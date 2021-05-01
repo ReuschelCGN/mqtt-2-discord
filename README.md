@@ -22,12 +22,6 @@ PRE-REQUISITES
     sudo apt-get install python3-setuptools
     sudo apt-get install python3-wheel
 
-CREATE SHARED VIRTUAL ENVIRONMENT
-
-    mkdir ~/modules
-    cd ~/modules
-    python3 -m venv venv
-
 INSTALLATION
 
     mkdir /opt/modules
