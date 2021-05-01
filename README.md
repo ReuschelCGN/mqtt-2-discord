@@ -57,7 +57,7 @@ CONFIGURATION
         - Press Save
 
     Now edit/create a config.ini file:
-    sudo nano /opt/modules/mqtt-2-discord/config.ini
+    sudo nano /opt/modules/config.ini
     
     Add an optional section [MQTT] (case sensitive) if your MQTT server is located on a different server, you have changed the port number or have configured authentication:
     
@@ -76,7 +76,7 @@ CONFIGURATION
 TESTING
 
     cd /opt/modules
-    venv/bin/python mqtt-2-discord/mqtt-2-discord.py
+    venv/bin/python mqtt-2-discord.py
 
     Send a message on your configured topic and it should be displayed in your Discord channel.
 
