@@ -29,7 +29,7 @@ INSTALLATION
     cd /opt/modules
     git clone https://github.com/automation-itspeedway-net/mqtt-2-discord.git
     python3 -m venv venv
-    . ./venv/bin/activate
+    . venv/bin/activate
     pip install wheel
     pip install paho-mqtt
     pip install discord-webhook   
