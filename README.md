@@ -32,7 +32,18 @@ INSTALLATION
     . venv/bin/activate
     pip install wheel
     pip install paho-mqtt
-    pip install discord-webhook   
+    pip install discord-webhook
+
+Copy example config and adjust settings:
+
+    cp config.ini.example config.ini
+    nano config.ini
+
+Try if everything works, deactivate venv, leave bash:
+
+    python mqtt-2-discord.py
+    deactivate
+    exit
     
 CONFIGURATION
 
@@ -46,7 +57,6 @@ CONFIGURATION
         - Press Save
 
     Now edit/create a config.ini file:
-    
     sudo nano /opt/modules/mqtt-2-discord/config.ini
     
     Add an optional section [MQTT] (case sensitive) if your MQTT server is located on a different server, you have changed the port number or have configured authentication:
