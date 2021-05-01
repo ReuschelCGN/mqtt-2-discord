@@ -1,0 +1,9 @@
+[MQTT]
+host=127.0.0.1
+port=1883
+username=MY-USERNAME
+password=MY-PASSWORD
+
+[Alerts]
+topic=messages/alerts
+webhook=https://discord.com/api/webhooks/AAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAA
