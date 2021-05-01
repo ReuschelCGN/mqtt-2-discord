@@ -1,4 +1,4 @@
-#!~/modules/venv/bin/python
+#!/opt/modules/venv/bin/python
 #
 # mqtt-2-discord
 # (c) Copyright Si Dunford, June 2020 
