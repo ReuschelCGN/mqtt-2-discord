@@ -1,10 +1,7 @@
 # mqtt-2-discord
 Daemon to send messages to Discord from MQTT.
 
-This is particularly useful when integrated into your applications and scripts or NodeRed.
-
-Find this on Blogger:
-https://tekkieramblings.blogspot.com/2020/06/discord-gateway-for-mqtt.html
+This is particularly useful when integrated into your applications and scripts.
 
 PROJECT STATUS: BETA-RELEASE
 
@@ -33,10 +30,10 @@ CREATE SHARED VIRTUAL ENVIRONMENT
 
 INSTALLATION
 
-    mkdir ~/modules
-    cd ~/modules
+    mkdir /opt/modules
+    cd /opt/modules
     git clone https://github.com/automation-itspeedway-net/mqtt-2-discord.git
-    
+    python3 -m venv venv
     . ./venv/bin/activate
     pip install wheel
     pip install paho-mqtt
@@ -55,7 +52,7 @@ CONFIGURATION
 
     Now edit/create a config.ini file:
     
-    sudo nano ~/modules/mqtt-2-discord/config.ini
+    sudo nano /opt/modules/mqtt-2-discord/config.ini
     
     Add an optional section [MQTT] (case sensitive) if your MQTT server is located on a different server, you have changed the port number or have configured authentication:
     
@@ -73,18 +70,14 @@ CONFIGURATION
 
 TESTING
 
-    cd ~/modules
+    cd /opt/modules
     venv/bin/python mqtt-2-discord/mqtt-2-discord.py
 
     Send a message on your configured topic and it should be displayed in your Discord channel.
 
 RUN AS A DEAMON
 
-    cp ~/modules/mqtt2discord.service /etc/systemd/system/
+    cp /opt/modules/mqtt2discord.service /etc/systemd/system/
     sudo chmod u+rwx /etc/systemd/system/mqtt2discord.service
     sudo systemctl enable mqtt2discord
     sudo systemctl start mqtt2discord
-    
-
-
-
