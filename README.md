@@ -24,7 +24,8 @@ PRE-REQUISITES
 
 INSTALLATION
 
-    mkdir /opt/modules
+    sudo adduser --system --home /opt/modules --group mqtt2dis
+    sudo -u mqtt2dis bash
     cd /opt/modules
     git clone https://github.com/automation-itspeedway-net/mqtt-2-discord.git
     python3 -m venv venv
