@@ -5,10 +5,6 @@ This is particularly useful when integrated into your applications and scripts.
 
 PROJECT STATUS: BETA-RELEASE
 
-KNOWN BUGS:
-- Service file is misconfigured
-- Minimal error correction
-
 THINGS TO DO:
 * Add multiple mqtt server support
 * Export requirements.txt
