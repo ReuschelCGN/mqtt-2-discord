@@ -59,9 +59,9 @@ CONFIGURATION
     Now edit/create a config.ini file:
     sudo nano /opt/modules/config.ini
     
-    Add an optional section [MQTT] (case sensitive) if your MQTT server is located on a different server, you have changed the port number or have configured authentication:
+    Add an optional section [mqtt] (case sensitive) if your MQTT server is located on a different server, you have changed the port number or have configured authentication:
     
-        [MQTT]
+        [mqtt]
         host=127.0.0.1
         port=1883
         username=MY-USERNAME
