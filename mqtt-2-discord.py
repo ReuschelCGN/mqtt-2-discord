@@ -52,7 +52,7 @@ def on_message(client, userdata, msg):
         payload = str(msg.payload.decode())
         topic = msg.topic           
         if topic in topics:
-            webhook_url = topics[topic]
+            webhook_url = topics[webhook]
             print( "WEBHOOK: "+webhook_url )
             webhook = DiscordWebhook( url=webhook_url, content=payload )
             webhook.execute()
