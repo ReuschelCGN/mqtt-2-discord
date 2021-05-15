@@ -53,7 +53,7 @@ def on_message(client, userdata, msg):
         topic = msg.topic           
         if topic in topics:
             webhook_url = topics[webhook]
-            print( 'WEBHOOK:', webhook_url )
+            print( "WEBHOOK: "+webhook_url )
             webhook = DiscordWebhook( url=webhook_url, content=payload )
             webhook.execute()
     except Exception as e:
