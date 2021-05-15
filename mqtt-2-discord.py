@@ -49,7 +49,7 @@ def on_connect(client, userdata, flags, rc):
 
 def on_message(client, userdata, msg):
     try:
-        payload = str(msg.payload.decode())
+        payload = str(msg.payload.decode('utf-8'))
         topic = msg.topic           
         if topic in topics:
             webhook_url = topics[webhook]
