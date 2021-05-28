@@ -1,5 +1,5 @@
 # mqtt-2-discord-bridge
-Bot to send messages to Discord from MQTT.
+Modul to send messages to Discord from MQTT.
 
 This is particularly useful when integrated into your applications and scripts.
 
