@@ -1,9 +1,16 @@
-[mqtt]
-host=127.0.0.1
-port=1883
-username=MY-USERNAME
-password=MY-PASSWORD
+[MQTT]
+broker-url = Host_or_IP
+broker-port = 1883
+mqtt-username = your_username
+mqtt-password = your_password
 
-[Alerts]
-topic=messages/alerts
-webhook=https://discord.com/api/webhooks/AAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAA
+[DISCORD]
+DISCORD_WEBHOOK = https://discord.com/api/webhooks/discord-webhook-for-Servicemessages
+
+[TEST]
+mqtttopic = test/txt
+dwebhook = https://discord.com/api/webhooks/discord-webhook-for-topic-test-txt
+
+[MORETESTS]
+mqtttopic = usw/msg/status
+dwebhook = https://discord.com/api/webhooks/discord-webhook-for-topic-usw-msg-status
