@@ -8,6 +8,6 @@
         - /etc/timezone:/etc/timezone:ro
         - /etc/localtime:/etc/localtime:ro
         - ./mqtt-2-discord/config.ini:/usr/src/app/config.ini
-        - ./volumes/mqtt2disc/logs:/usr/src/app/logs
+        - ./mqtt-2-discord/logs:/usr/src/app/logs
     networks:
         - default
