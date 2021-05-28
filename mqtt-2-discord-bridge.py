@@ -38,7 +38,7 @@ def on_connect(client, userdata, flags, rc):
 
 def on_message(client, userdata, msg):
     try:
-        payload = str(':warning: Nachricht von: ' + msg.topic + ':\nStatus/Msg: ' + msg.payload.decode('utf-8') + '  <:pikachu_ok:844657994167484436>')
+        payload = str(':warning: Message form Topic: ' + msg.topic + ':\nStatus/Msg: ' + msg.payload.decode('utf-8'))
         topic = msg.topic
         print( "MSGTOPIC: "+topic )
         if topic in topics:
